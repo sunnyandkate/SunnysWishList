@@ -1,0 +1,507 @@
+html{
+  height:100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height:100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #268b9d;
+    background-image:url("images/moon2.png");
+    background-size:cover;   
+    background-repeat: no-repeat;
+}
+/*main*/
+.container{  
+    min-height:100vh;   
+}
+.container h1{
+    color:rgb(20, 79, 137);
+}
+.post-img{
+  width:5rem;
+  height:5rem;
+}
+a{
+  text-decoration:none;
+}
+/*frontside*/
+.frontpage-container, .secondpage-container{
+    background-color: rgb(20, 79, 137);  
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.frontside-card{  
+    height:100vh; 
+    padding:3rem;
+    transition:all 2.5s ease-in;
+    max-height:35rem;
+    
+}
+.card-inside-container{
+  max-width: 50rem;
+  min-width:20rem;
+  margin: auto;
+  height: 70%;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  width: 70%;
+}
+.card-text{
+  color:#2a3c80;
+  text-align: center;
+  text-shadow: 1px 3px 13px beige;
+  font-size:1.3rem;
+  text-transform:uppercase;
+}
+.leftSideOpen > .main-container > .card-text, .card{   
+    text-align:center;
+   color:#dee0e5;
+   text-shadow: 5px 5px 3px #070707;
+}
+.main-container{
+  margin-top:0;
+}
+.card-text{
+  color:beige;
+}
+.card{
+   display:flex;
+   flex-direction: column;
+  
+}
+.no-card{
+  display:none;
+}
+
+.askName{
+    color:rgb(196, 133, 39);
+    text-shadow: 1px 5px 13px #18508c;
+    font-family:'Shadows Into Light Two', cursive;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.openCard-btn{
+    color:lightyellow;
+    background-color:rgb(20, 79, 137);
+    text-shadow: 1px 3px 13px beige;
+    box-shadow: 10px 10px 10px black;
+    padding:.5rem;
+    border-radius:5rem;
+    outline:none;
+    border:none;  
+    position: absolute;
+right: 30%;
+bottom: 2rem;
+z-index:33;
+cursor:pointer;
+text-align: center;
+}
+.openCard-btn:hover{
+  color:#e0e6c4;
+  background-color: #1d485e;
+  opacity: .8;
+  
+}
+
+#right-side{
+    position:absolute;
+    top:20%;  
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+#left-side{  
+    position:absolute;
+    top:0;
+    left:0;  
+    bottom:0;
+    margin:auto; 
+   
+}
+.leftSideOpen{
+  background: #0a15304a;
+}
+.left-side-closed{
+  
+  background-color: rgb(27, 128, 144);
+  background-image:url("images/moon-bg.png");
+  background-size:cover;
+  background-position: 30%;
+  border:.25rem solid rgb(74, 156, 183);
+  box-shadow: 20px 20px 20px #13313a;
+  right:0;
+}
+.right-side-closed{
+  width:0;
+  background-color: rgb(27, 144, 115);
+  left:0;
+}
+/* .leftSideOpen{
+  width:50%;
+ 
+  left:0;
+  right:50%;  
+  } */
+/* .rightSideOpen{
+   width:50%;
+   
+   right:0;
+   left:50%;  
+  } */
+  .card-glow{
+    background-color: rgb(89, 154, 160); 
+    background-image:url("images/night.png");
+    background-size:cover;
+   /*
+    box-shadow: 1px 3px 6px 10px rgb(113, 190, 130);*/
+    border:.25rem solid lightblue;
+    animation-name: glow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  @keyframes glow{
+		
+		0%, 100%{
+		
+			box-shadow: 0px 2px 20px 4px rgb(31, 162, 183);
+			
+		}
+		50%{
+		
+			box-shadow: 0px 2px 20px 4px rgba(255, 230, 65,0.3),
+      5px 2px 20px 4px rgba(255, 230, 65,1) inset;
+			
+		}		
+	}
+
+  /*login*/
+.login-container{
+    font-family: 'Montserrat', sans-serif;  
+    width:100%;
+    height:100vh;
+}
+  .login{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+  }
+  .login h2{
+    font-family: 'Shadows Into Light Two', cursive;
+    color:beige;
+    text-shadow: 3px 3px 20px black;
+    text-transform: uppercase;
+    padding-top:3rem;
+    font-size:2rem;
+  }
+  .login-form{
+    width:50%;
+    background-color:rgb(46, 127, 158);
+   
+    border:.8rem solid #13313a;
+    box-shadow: 20px 20px 20px #13313a;
+    border-radius:1rem;
+    padding:2rem;
+    max-width: 25rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .login-form input{
+    outline:none;
+    color:#005680;
+    background-color:beige;
+    border-radius:1rem;
+    padding:.7rem;
+    display:block;
+    margin:1rem auto;
+    border:none;
+  }
+  .login-btn, .submit-btn{
+    background-color:#005680;
+    color:#2d8f41;
+    outline:none;
+    padding:.5rem 3rem;
+    border:.3rem solid #2d8f41;
+    border-radius:1rem;
+    box-shadow:2px 2px 10px #005680;
+    margin:auto;
+    cursor:pointer;
+    background-image:url("images/pumpkin2.png");
+background-size:contain;
+  }
+  .login-btn:hover, .submit-btn:hover{
+    color:lightyellow;
+    background-color:#2d8f41;
+    border:.3rem solid #005680;
+    box-shadow:2px 2px 10px #2d8f41;
+    margin-top:2px;
+    margin-bottom:-2px;
+  }
+  /*wishlist*/
+.wishlist-container{
+  min-height:80%;
+  padding:2rem;
+ 
+}
+.header-wishlist h1{
+  font-family:'Shadows Into Light Two', cursive;
+  margin:0;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  text-align:center;
+}
+.available-items-container, .selected-items-container{
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-wrap:wrap;
+margin:2rem auto;
+}
+
+.product-box, .select-item-box{
+font-family:'Shadows Into Light Two', cursive;
+font-size:1rem;
+color:#5469dc;
+background-color: #0ad0f05e;
+background-image:url("images/pumpkin-moon.png");
+background-repeat: repeat-x;
+box-shadow: 10px 10px 10px #244774;
+padding:.5rem;
+margin-bottom:2rem;
+border:.2rem solid #5469dc85;
+border-radius:.2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 25%;
+min-width:12rem;
+max-width:15rem;
+
+}
+.product-box a, .selected-box a, .select-item-box a{
+  text-decoration: none;
+}
+.product-box > div, .product-box > img, .select-item-box > div, .select-item-box > img{
+  margin-bottom:1rem;
+}
+.name{
+  font-size:1.5rem;
+  text-transform: uppercase;
+  margin-top:1rem;
+}
+.link a, .select-item{
+ 
+  display:block;
+}
+.link a{
+  color:beige;
+  margin-bottom:1rem;
+}
+.link a:hover{
+  color:#255c30;
+}
+.select-item{
+  color:rgb(150, 40, 58);
+  background-color: #68c3d2;
+  border:2px solid rgb(89, 154, 160);
+  border-radius: 1rem;
+  padding:.5rem;
+  margin:1rem auto;
+}
+.select-item:hover{
+  font-weight:bold;
+  font-size:1rem;
+  box-shadow:2px 2px 10px rgb(27, 128, 144);
+}
+.selected-box{
+  font-family: 'Montserrat', sans-serif;
+  color:#1d485e;
+  background-color: lightgrey;
+  opacity: .5;
+  padding:2rem;
+border:.2rem solid beige;
+border-radius:.2rem;
+  margin-bottom:1rem;
+  max-width:15rem;
+}
+.logout{
+  display: flex;
+  justify-content: end;
+}
+.logout a{
+  font-size:1rem;
+  font-weight:400;
+  font-family:'Montserrat', sans-serif;
+  color:#2d8f41;
+  background-color: #005680;
+  border:.2rem solid #2d8f41;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:2rem;
+  padding:.5rem;
+  cursor:pointer;
+}
+.logout a:hover{
+  color:#005680;
+  background-color: #2d8f41;
+}
+/*selected item*/
+.select-item-box-container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding:5rem;
+}
+.select-item-box{
+  font-family:'Shadows Into Light Two', cursive;
+  font-size:1.5rem;
+  color:#2a3865;
+  padding:5rem;
+  border:.2rem solid #2d8f41;
+  border-radius:.2rem;
+  box-shadow: 10px 10px 10px #244774;
+  text-transform: uppercase;
+}
+.confirm-select{
+  font-family: 'Shadows Into Light Two', cursive;
+  color:beige;
+  font-size:1.5rem;
+  padding:2rem;
+  
+  text-align: center;
+  background: #244774;
+width: 80%;
+margin: auto;
+ 
+margin-top: 1rem;
+border-radius: .5rem;
+box-shadow: 10px 10px 10px black;
+}
+.back a{
+  color:#005680;
+  text-decoration: none;
+  padding:2rem;
+  font-size:1.5rem;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px rgb(10, 7, 30);
+}
+  /*footer*/
+  footer{
+    font-family: 'Shadows Into Light Two', cursive;
+    color:#e0e6c4;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self:stretch;
+    margin-top:7rem;
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  footer > .footer-right >  a{
+    color:#e0e6c4 !important;
+  }
+.move{
+  width:8rem;
+  
+  position:relative;
+  left:0;
+  top:20%;
+  animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  @keyframes move{
+		
+		0%{
+		
+			left: 10%;
+			top:25%;
+		}
+    15%{
+      left:15%;
+      top:30%;
+    }
+    20%{
+      left:20%;
+      top:50%;
+    }
+    30%{
+      left:40%;
+      top:30%;
+    }
+    40%{
+      left:50%;
+      top:20%;
+    }
+		50%{
+		
+			left:60%;
+      top:30%;
+			
+		}		
+    100%{
+      left:100%;
+      top:40%;
+    }
+	}
+
+
+  /*media queries*/
+  @media ( min-width: 600px){
+    .login-form{
+      background-image:url("images/pumpkin2.png");
+      background-size:cover;
+    }
+    
+    .openCard-btn{
+      width:15%;
+    }
+    .frontside-card{
+      width:80%;
+    }
+    .card-inside-container{
+      height:70%;
+    }
+   
+    #right-side{
+      top:0;
+    }
+    .leftSideOpen{
+      background:transparent;
+      width:50%;
+     
+      left:0;
+      right:50%;  
+      }
+    .rightSideOpen{
+       width:50%;
+       
+       right:0;
+       left:50%;  
+      }
+  }
+  @media(min-width: 750px){
+    .left-side-closed{
+      width:50%;
+    }
+  }
+  @media(max-height: 500px) and (orientation:landscape){
+    .card-inside-container{
+      height:100vh;
+    }
+  }
