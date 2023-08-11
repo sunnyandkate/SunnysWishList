@@ -6,7 +6,7 @@ html{
       padding: 0;
       box-sizing: border-box;
       min-height:100vh;
-      font-family: 'Julius Sans One', sans-serif;
+      font-family: 'Comic Sans MS';
       background: #268b9d;
       background-image:url("images/moon2.png");
       background-size:cover;   
@@ -264,7 +264,7 @@ html{
    
   }
   .header-wishlist h1{
-    font-family:'Julius Sans One', cursive;
+    font-family:'Comic Sans MS';
     margin:0;
     padding-top:2rem;
     padding-bottom:2rem;
@@ -279,7 +279,7 @@ html{
   }
   
   .product-box, .select-item-box{
-  font-family:'Julius Sans One', cursive;
+  font-family:'Comic Sans MS';
   font-size:1rem;
   color:#5469dc;
   background-color: #0ad0f05e;
@@ -352,7 +352,7 @@ html{
   .logout a{
     font-size:1rem;
     font-weight:400;
-    font-family:'Julius Sans One', sans-serif;
+    font-family:'Helvetica';
     color:#2d8f41;
     background-color: #005680;
     border:.2rem solid #2d8f41;
@@ -374,7 +374,7 @@ html{
     padding:5rem;
   }
   .select-item-box{
-    font-family:'Julius Sans One', cursive;
+    font-family:'Helvetica';
     font-size:1.5rem;
     color:#2a3865;
     padding:5rem;
@@ -384,7 +384,7 @@ html{
     text-transform: uppercase;
   }
   .confirm-select{
-    font-family: 'Julius Sans One', cursive;
+    font-family: 'helvetica';
     color:beige;
     font-size:1.5rem;
     padding:2rem;
@@ -409,7 +409,7 @@ html{
   }
     /*footer*/
     footer{
-      font-family: 'Julius Sans One', cursive;
+      font-family: 'Helvetica';
       color:#e0e6c4;
       display:flex;
       flex-direction: row;
