@@ -1,7 +1,7 @@
 <?php
 
 //connect to database
-$connection = mysqli_connect('localhost', 'root', '', 'sunnysWishList');
+$connection = mysqli_connect('localhost', '', '', 'sunnysWishList');
 
 
 //check connection
